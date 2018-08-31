@@ -185,6 +185,8 @@
                                 hashResults[currentx] = 1;
                             }
                         }
+                        // $.post('save.php',{Keywords:currents,Searchby:querykeyword,Language:lang}); // 发送到save.php处理
+                        $.post('saveTXT.php',{Keywords:currents,Searchby:querykeyword,Language:lang}); // 发送到save.php处理
                     }
                 }
                 $("#keywordsCounter").html(keywordsCounter);
